@@ -1,6 +1,31 @@
 <div class="login-container">
+    <img class="film" src="../../assets/film.png" alt="" />
     <div class="logo">Rotten Animes</div>
     <div class="desc">
-        Rotten Anime is the world's most trusted recommendation resource for quality horror and psychological thriller anime. As the leading online aggregator of anime reviews from fans and critics alike, we provide enthusiasts with a comprehensive guide to what’s hauntingly good – and what’s not – in the world of anime. If you're a fan looking for chilling recommendations, in-depth reviews, or to share your own opinions on spine-tingling episodes, you've come to the right place. Dive into the macabre with Rotten Anime and explore the darkest corners of animation.
+        Rotten Anime is the world's most trusted recommendation resource for quality horror and psychological thriller anime. As the leading online aggregator of anime reviews from fans and critics alike, we provide enthusiasts with a comprehensive guide to what’s hauntingly good – and what’s not – in the world of anime.
     </div>
+    <div class="login-form">
+        <div class="form-group">
+          <label for="uname">Username</label>
+          <input
+            type="text"
+            name="uname"
+            class="form-control"
+            
+          />
+        </div>
+        <div class="form-group">
+          <label for="pword">Password</label>
+          <input
+            type="password"
+            name="pword"
+            class="form-control"
+            
+          />
+        </div>
+        <div class="btn-container">
+          <div class="error"></div>
+          <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+      </div>
 </div>
