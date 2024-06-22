@@ -4,28 +4,20 @@
     <div class="desc">
         Rotten Anime is the world's most trusted recommendation resource for quality horror and psychological thriller anime. As the leading online aggregator of anime reviews from fans and critics alike, we provide enthusiasts with a comprehensive guide to what’s hauntingly good – and what’s not – in the world of anime.
     </div>
-    <div class="login-form">
-        <div class="form-group">
-          <label for="uname">Username</label>
-          <input
-            type="text"
-            name="uname"
-            class="form-control"
-            
-          />
-        </div>
-        <div class="form-group">
-          <label for="pword">Password</label>
-          <input
-            type="password"
-            name="pword"
-            class="form-control"
-            
-          />
-        </div>
-        <div class="btn-container">
-          <div class="error"></div>
-          <button class="btn btn-dark" (click)="login()">Login</button>
-        </div>
-      </div>
+    <form>
+        <div class="login-form">
+            <div class="form-group">
+              <label for="uname">Username</label>
+              <input type="text" name="uname" class="form-control" [(ngModel)]="username"/>
+            </div>
+            <div class="form-group">
+              <label for="pword">Password</label>
+              <input type="password" name="pword" class="form-control" [(ngModel)]="password"/>
+            </div>
+            <div class="btn-container">
+              <div class="error">{{errorMsg}}</div>
+              <button class="btn btn-dark" (click)="login()">Login</button>
+            </div>
+          </div>
+    </form>
 </div>
