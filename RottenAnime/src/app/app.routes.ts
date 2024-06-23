@@ -7,6 +7,6 @@ export const routes: Routes = [
     {path:'',redirectTo:'login',pathMatch:'full'},
     {path:'home',component:HomeComponent},
     {path:'login',component:LoginComponent},
-    {path:'anime',component:AnimesComponent},
+    {path:'anime/:type/:id',component:AnimesComponent},
     {path:'**',component:LoginComponent}
 ];

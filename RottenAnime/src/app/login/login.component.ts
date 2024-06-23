@@ -16,7 +16,6 @@ export class LoginComponent {
  errorMsg="";
  constructor(private auth:AuthServicesService,private route:Router){}
   login(){
-    debugger;
     if(this.username.trim().length===0){
       this.errorMsg="Username is Required";
     }
@@ -33,7 +32,6 @@ export class LoginComponent {
         this.route.navigate(['home']);
       }
       if(res===403){
-        debugger;
         this.errorMsg="Invalid Credentials"
       }
     }
